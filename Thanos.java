@@ -21,7 +21,7 @@ public class Thanos {
         showList(heroes);
         
         // TODO 2: Add a Comparator and sort by age (descending)
-        Comparator<Hero> heroByDescendingAge = new Comparator<Hero>() {
+        Comparator<Hero> heroDescAge = new Comparator<Hero>() {
 
      @Override	    	   
      public int compare(Hero hero1, Hero hero2) {
@@ -29,7 +29,7 @@ public class Thanos {
      }
      };
 
-     Collections.sort(heroes, heroByDescendingAge);
+     Collections.sort(heroes, heroDescAge);
 
         System.out.println("\nOrder by age:");
         showList(heroes);
